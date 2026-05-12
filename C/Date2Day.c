@@ -7,7 +7,7 @@
 int main()
 {
 	int q, m, y, k, j, h;
-	char month[10];
+	char month[4];
 	/* Date*/
 	printf("\n\tEnter the date:");
 	scanf("%d", &q);
@@ -39,13 +39,11 @@ int main()
 		m=12;
 	else if (strcmp(month, "January")==0)
 	{
-		m=13;
-		y=y-1;
+		m=12;
 	}
 	else if (strcmp(month, "February")==0)
 	{
-		m=14;
-		y=y-1;
+		m=15;
 	}
 	else
 		printf("Invalid Month Name");
