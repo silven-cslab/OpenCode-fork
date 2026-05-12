@@ -52,4 +52,5 @@ Use this workflow when adding challenge files to the OpenCode repository.
 ## Notes For Agents
 - Keep changes focused and minimal.
 - Do not fix seeded bugs in this workflow.
+- Never add inline bug-explanatory comments inside challenge code files (for example, comments like "# BUG", "FIXME", or text that reveals seeded issues).
 - Verify issue links and file names are correct before submission.
