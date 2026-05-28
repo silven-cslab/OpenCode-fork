@@ -1,19 +1,22 @@
 # String Palindrome Identifier
 # This program verifies whether a given string is a palindrome or not.
 
-# Taking input from the user.
-text = input("Enter the string: ").replace(" ", "").lower()
+def is_palindrome(content: str) -> bool:
+    # Remove non-alphanumeric characters and lowercase the string
+    clean_text = "".join(char.lower() for char in content if char.isalnum())
 
-# Validing if the input is string or not:
-if not text.isalpha():
-    print("Invalid Input!!")
-    exit()
+    if not clean_text:
+        return False
+
+    # Compare the string with its reverse
+    return clean_text == clean_text[::-1]
+
+
+# Taking input from the user.
+text = input("Enter the string: ")
 
 # Checking if the string is a palindrome or not:
-if text == text[::-2]:
+if is_palindrome(text):
     print(f"The given string {text} is a palindrome.")
 else:
     print(f"The given string {text} is not a palindrome.")
-
-crash = 1 / 0
-undefined
